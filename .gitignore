@@ -1,0 +1,36 @@
+# 构建产物
+/target/
+**/node_modules/
+*.log
+.DS_Store
+
+# 命中结果 / 私钥 / 密钥材料（切勿提交）
+found.txt
+found*.txt
+*.key
+*.pem
+*.p12
+*.pfx
+id_rsa*
+*.secret
+*.secrets
+.env
+.env.*
+!.env.example
+credentials*
+secrets/
+
+# 本地账号、笔记、开发文档（不进开源仓库）
+极品号*.md
+docs/
+*.local.md
+private/
+local/
+notes/
+
+# IDE / 编辑器
+.idea/
+.vscode/
+*.swp
+*.swo
+*~

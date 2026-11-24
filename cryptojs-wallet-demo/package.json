@@ -1,0 +1,13 @@
+{
+  "name": "cryptojs-wallet-demo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Experimental EVM wallet generation using legacy CryptoJS randomness",
+  "scripts": {
+    "start": "node wallet.cjs"
+  },
+  "dependencies": {
+    "crypto-js": "3.1.9-1",
+    "ethers": "6.17.0"
+  }
+}

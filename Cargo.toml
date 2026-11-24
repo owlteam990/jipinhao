@@ -1,0 +1,24 @@
+[package]
+name = "jipinhao"
+version = "0.1.0"
+edition = "2021"
+description = "TRON 极品号碰撞器：本地暴力搜索带吉利后缀的地址"
+license = "MIT"
+
+[dependencies]
+bs58 = "0.5"
+clap = { version = "4", features = ["derive"] }
+ctrlc = "3"
+hex = "0.4"
+num_cpus = "1.16"
+rand = "0.8"
+secp256k1 = { version = "0.29", features = ["rand-std"] }
+sha2 = "0.10"
+sha3 = "0.10"
+
+[profile.release]
+lto = true
+codegen-units = 1
+opt-level = 3
+panic = "abort"
+strip = true
